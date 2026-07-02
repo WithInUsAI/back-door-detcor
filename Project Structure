@@ -1,0 +1,78 @@
+```
+back-door-detcor/
+├── .gitignore
+├── README.md
+├── package.json
+├── tsconfig.json
+├── babel.config.js
+├── metro.config.js
+├── app.json
+├── index.js
+├── react-native.config.js
+├── android/                   (native plugin)
+├── ios/                       (native plugin)
+├── assets/
+│   ├── audio/
+│   │   ├── scanning.wav
+│   │   ├── lock_on.wav
+│   │   ├── door_open.wav
+│   │   ├── emergency_seal.wav
+│   │   ├── ambience_rain.mp3
+│   │   ├── ambience_sun.mp3
+│   │   ├── ambience_night.mp3
+│   │   ├── ambience_abandoned.mp3
+│   │   └── ambience_industrial.mp3
+│   └── backdoors/
+│       ├── rain_city.png
+│       ├── sun_boardwalk.png
+│       ├── night_alleys.png
+│       ├── abandoned_terminal.png
+│       └── industrial.png
+├── src/
+│   ├── App.tsx
+│   ├── navigation/
+│   │   └── RootNavigator.tsx
+│   ├── screens/
+│   │   ├── MainScreen.tsx
+│   │   ├── SoloLensScreen.tsx
+│   │   ├── BackDoorExplorerScreen.tsx
+│   │   └── WormholeStabilizerScreen.tsx
+│   ├── components/
+│   │   ├── RemoteDeviceUI/
+│   │   │   ├── AnalogMeter.tsx
+│   │   │   ├── GlitchRadar.tsx
+│   │   │   ├── WaveformDisplay.tsx
+│   │   │   ├── ButtonPanel.tsx
+│   │   │   └── NotificationBar.tsx
+│   │   ├── SourceCodeReveal.tsx
+│   │   ├── LevelUpModal.tsx
+│   │   └── EmergencySealButton.tsx
+│   ├── services/
+│   │   ├── DetectorEngine.ts
+│   │   ├── BackDoorManager.ts
+│   │   ├── SourceCodeTranslator.ts
+│   │   ├── LevelSystem.ts
+│   │   └── SoloLensProcessor.ts
+│   ├── hooks/
+│   │   ├── useDetector.ts
+│   │   ├── useLevel.ts
+│   │   └── useSoloLens.ts
+│   ├── types/
+│   │   └── index.ts
+│   ├── constants/
+│   │   ├── levelData.ts
+│   │   ├── sourceCodeSecrets.ts
+│   │   └── themeColors.ts
+│   └── utils/
+│       ├── audioManager.ts
+│       ├── haptics.ts
+│       └── storage.ts
+├── ios/
+│   ├── EraseLifePlugin.swift         (MediaPipe segmentation)
+│   ├── EraseLifePlugin.m             (ObjC bridge)
+│   └── EraseLifePlugin-Bridging-Header.h
+├── android/
+│   └── app/src/main/java/com/backdoordetcor/
+│       ├── EraseLifePluginModule.java
+│       └── EraseLifePluginPackage.java
+```
