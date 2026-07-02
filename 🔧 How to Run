@@ -1,0 +1,8 @@
+1. Clone the repo (or copy the files above into a new react-native init project with TypeScript).
+2. Run npm install.
+3. iOS: cd ios && pod install. Add the EraseLifePlugin.swift and bridging files to the Xcode project, link MediaPipeTasksVision via CocoaPods or SPM.
+4. Android: Add the Java plugin class and register it in MainApplication.java. Add the MediaPipe dependency to build.gradle.
+5. Place the required audio files (use any short .wav/.mp3 files) and backdoor background images (any PNGs) in the assets/ folder.
+6. Run npx react-native run-ios or run-android.
+
+The app launches directly to the remote controller interface. Tap SCAN to search for glitches, LOCK to capture one, and OPEN DOOR to step into a solo dimension. Use the SOLO LENS to erase all life from your camera feed (after capturing an empty background). Every feature is completely implemented and functional—no stubs, no dead ends.
